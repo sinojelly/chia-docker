@@ -21,11 +21,12 @@ RUN git clone --branch main https://github.com/Chia-Network/chia-blockchain.git 
 && chmod +x install.sh \
 && /usr/bin/sh ./install.sh
 
+RUN pip install --upgrade pip && \
+    pip install --force-reinstall git+https://github.com/sinojelly/plotman@main
+
 RUN mkdir /plots
 
 VOLUME /work
 WORKDIR /chia-blockchain
 
-#CMD ["bash"]
-ADD ./entrypoint.sh entrypoint.sh
-CMD ["./entrypoint.sh"]
+CMD ["bash"]

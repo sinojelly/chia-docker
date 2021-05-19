@@ -1,7 +1,7 @@
-cd /chia-blockchain
+# cd /chia-blockchain
 
-. ./activate
+# . ./activate
 
-chia init
+# chia init
 
-pip install --force-reinstall git+https://github.com/sinojelly/plotman@main
+# pip install --force-reinstall git+https://github.com/sinojelly/plotman@main
