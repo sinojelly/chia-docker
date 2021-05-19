@@ -4,7 +4,7 @@
 docker build -t jelly/chia:latest .
 
 ## Run docker
-docker run -it -v ~/work:/work jelly/chia:latest /bin/bash
+docker run -it -v ~/work:/work sinojelly/chia:latest /bin/bash
 
 ## Plot disk
 ```
