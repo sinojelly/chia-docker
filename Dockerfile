@@ -28,4 +28,4 @@ WORKDIR /chia-blockchain
 
 #CMD ["bash"]
 ADD ./entrypoint.sh entrypoint.sh
-ENTRYPOINT ["bash", "./entrypoint.sh"]
+CMD ["./entrypoint.sh"]
